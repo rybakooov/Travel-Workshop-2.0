@@ -1,0 +1,15 @@
+dialog.modal-form#main-modal-form
+  form
+    .modal-form__title Свяжитесь с нами
+    label.modal-form-label.modal-form-label_half
+      input#userName(type="text" data-required)
+      .modal-form__placeholder Имя
+    label.modal-form-label.modal-form-label_half
+      input#userName(type="text" data-required data-type="email")
+      .modal-form__placeholder E-mail
+    label.modal-form-label.modal-form-label_full
+      input#userName(type="text")
+      .modal-form__placeholder Сообщение
+    .modal-form-bot
+      button(type="submit").modal-form-bot__btn Отправить
+      p.modal-form-bot__personalData Нажимая на кнопку, вы даете согласие на обработку персональных данных

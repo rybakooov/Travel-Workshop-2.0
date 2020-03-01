@@ -1,0 +1,51 @@
+extends ../template
+block title
+  | Мастерская Путешествий
+block content
+  section.wrapper.wrapper_solo
+    main.main
+      section.tour
+        .tour-photos
+          .tour-mainSl-wrap
+            .tour-mainSl__prev
+              <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L0.999999 12L12 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            .tour-mainSl__next
+              <svg width="13" height="24" viewBox="0 0 13 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L12 12L1 23" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            .tour-main-slider
+              .tour-main-slider__item
+                img(src="assets/images/tour-item.png", alt="")
+              .tour-main-slider__item
+                img(src="assets/images/tour-item.png", alt="")
+              .tour-main-slider__item
+                img(src="assets/images/tour-item.png", alt="")
+              .tour-main-slider__item
+                img(src="assets/images/tour-item.png", alt="")
+              .tour-main-slider__item
+                img(src="assets/images/tour-item.png", alt="")
+          .tour-sub-slider
+            .tour-sub-slider__item
+              img(src="assets/images/tour-item.png", alt="")
+            .tour-sub-slider__item
+              img(src="assets/images/tour-item.png", alt="")
+            .tour-sub-slider__item
+              img(src="assets/images/tour-item.png", alt="")
+            .tour-sub-slider__item
+              img(src="assets/images/tour-item.png", alt="")
+            .tour-sub-slider__item
+              img(src="assets/images/tour-item.png", alt="")
+        .tour-desc
+          h1.tour-desc__title Салерно, Италия
+          .tour-desc-when
+            date 22.12.2019 
+            | на <span>7</span> ночей
+          p.tour-desc-advantage 🌟 Victor Praha 3*
+          p.tour-desc-advantage 🥐 Завтраки
+          p.tour-desc-advantage ☝ Дополнительно оплачиваются: виза, страховка от невыезда
+          p.tour-desc-advantage ☝ Можно рассмотреть любые даты для вашего отдыха, на любое другое количество дней, другие отели
+          .tour-desc-bot
+            a(data-modal).tour-desc-bot__btn Хочу туда!
+            p.tour-desc-bot__price <span>54 000</span> ₽

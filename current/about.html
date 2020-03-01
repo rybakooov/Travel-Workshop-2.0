@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="assets/styles/app.min.css"/>
+    <link rel="shortcut icon" href="assets/images/logo.png" type="image/x-icon"/>
+    <script src="assets/scripts/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=49253497-8455-4cb0-8cee-d31d801f4f4b&amp;lang=ru_RU" type="text/javascript"></script>
+    <script src="assets/scripts/slick.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+    <title> Мастерская Путешествий
+    </title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrap"><a class="header-logo" href="/">
+          <svg width="62" height="60" viewBox="0 0 62 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M57.6637 25.6991L60.1062 32.708L61.5929 35.6814L55.9608 31.2212L52.2478 42.6903L51.292 45.4513L38.9978 41.3097L20.9204 60L16.5664 38.4425L18.2871 36.6372L0 6.0531L24 28.2478L57.6637 0L48.5947 26.6549L50.1239 25.3805L57.6637 25.6991Z" fill="#3270F7"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M42.1593 32.0177L29.5221 24.8496L40.5664 33.3451L42.1593 32.0177Z" fill="#2051BC"/>
+<path d="M57.0265 27.9292L60.1062 32.708L57.9011 26.3802C57.7578 25.9691 57.3781 25.687 56.9431 25.6687L50.1239 25.3805L57.0265 27.9292Z" fill="#2051BC"/>
+<path d="M60.1062 32.708L57.0265 27.9292L55.9608 31.2212L58.9867 33.6175L61.5929 35.6814L60.1062 32.708Z" fill="#2051BC"/>
+<path d="M52.2478 42.6903L45.9823 34.0885L38.9978 41.3097L50.294 45.1151L51.292 45.4513L51.6365 44.4561L52.2478 42.6903Z" fill="#2051BC"/>
+<path d="M45.9823 34.0885L41.7345 34.7257L16.5664 38.4425L20.5205 58.02C20.6898 58.8584 21.7301 59.1628 22.3247 58.548L38.9978 41.3097L45.9823 34.0885Z" fill="#5085F9"/>
+<path d="M22.3247 58.548C21.7301 59.1628 20.6898 58.8584 20.5205 58.02L20.9204 60L22.3247 58.548Z" fill="#5085F9"/>
+<path d="M29.5221 24.8496L42.1593 32.0177L48.5947 26.6549L56.439 3.59965L57.6637 0L54.751 2.4441L24 28.2478L29.5221 24.8496Z" fill="#5085F9"/>
+<path d="M29.5221 24.8496L24 28.2478L5.42333 11.0685L0 6.0531L3.79087 12.3931L18.2871 36.6372L29.5221 24.8496Z" fill="#5085F9"/>
+</svg>Мастерская<br>путешествий</a>
+        <nav class="header-linklist"><a class="header-linklist__link" href="contacts.html">Контакты</a><a class="header-linklist__link" href="about.html">О компании</a><a class="header-linklist__link" href="tours.html">Приятные предложения</a></nav>
+        <div class="header-right"><a class="header-right__tel" href="tel: 8 (910) 973-31-95">8 (910) 973-31-95</a><a class="header-right__pop-up-btn" data-modal="data-modal">Пообщаемся</a>
+          <div class="header-right__switch-theme">
+             <svg class="header-right__switch-theme_moon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5 8.75C12.4997 10.4883 13.0173 12.1873 13.9865 13.6303C14.9558 15.0732 16.3329 16.1948 17.9422 16.852C19.5515 17.5091 21.3201 17.672 23.0224 17.3199C24.7246 16.9678 26.2834 16.1166 27.5 14.875V15C27.5 21.9037 21.9037 27.5 15 27.5C8.09625 27.5 2.5 21.9037 2.5 15C2.5 8.09625 8.09625 2.5 15 2.5H15.125C14.2925 3.31391 13.6314 4.28621 13.1806 5.3596C12.7298 6.433 12.4984 7.58577 12.5 8.75ZM5 15C4.99909 17.2312 5.74441 19.3987 7.11736 21.1575C8.49032 22.9162 10.412 24.1653 12.5768 24.706C14.7415 25.2467 17.0249 25.0479 19.0636 24.1412C21.1023 23.2346 22.7792 21.6721 23.8275 19.7025C21.9618 20.142 20.0147 20.0976 18.171 19.5734C16.3273 19.0492 14.6481 18.0626 13.2928 16.7072C11.9374 15.3519 10.9508 13.6727 10.4266 11.829C9.90239 9.98527 9.85796 8.0382 10.2975 6.1725C8.69697 7.02517 7.35848 8.29708 6.42532 9.85205C5.49216 11.407 4.99947 13.1865 5 15Z" fill="white"/>
+</svg>
+<svg class="header-right__switch-theme_sun" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 22.5C13.0109 22.5 11.1032 21.7098 9.6967 20.3033C8.29018 18.8968 7.5 16.9891 7.5 15C7.5 13.0109 8.29018 11.1032 9.6967 9.6967C11.1032 8.29018 13.0109 7.5 15 7.5C16.9891 7.5 18.8968 8.29018 20.3033 9.6967C21.7098 11.1032 22.5 13.0109 22.5 15C22.5 16.9891 21.7098 18.8968 20.3033 20.3033C18.8968 21.7098 16.9891 22.5 15 22.5ZM15 20C16.3261 20 17.5979 19.4732 18.5355 18.5355C19.4732 17.5979 20 16.3261 20 15C20 13.6739 19.4732 12.4021 18.5355 11.4645C17.5979 10.5268 16.3261 10 15 10C13.6739 10 12.4021 10.5268 11.4645 11.4645C10.5268 12.4021 10 13.6739 10 15C10 16.3261 10.5268 17.5979 11.4645 18.5355C12.4021 19.4732 13.6739 20 15 20ZM13.75 1.25H16.25V5H13.75V1.25ZM13.75 25H16.25V28.75H13.75V25ZM4.39375 6.16125L6.16125 4.39375L8.8125 7.045L7.045 8.8125L4.39375 6.1625V6.16125ZM21.1875 22.955L22.955 21.1875L25.6063 23.8387L23.8387 25.6063L21.1875 22.955ZM23.8387 4.3925L25.6063 6.16125L22.955 8.8125L21.1875 7.045L23.8387 4.39375V4.3925ZM7.045 21.1875L8.8125 22.955L6.16125 25.6063L4.39375 23.8387L7.045 21.1875ZM28.75 13.75V16.25H25V13.75H28.75ZM5 13.75V16.25H1.25V13.75H5Z" fill="white"/>
+</svg>
+          </div>
+        </div>
+        <div class="header__burger"><span></span><span></span></div>
+      </div>
+      <div class="header-mobile"></div>
+    </header>
+    <section class="wrapper wrapper_solo">
+      <main class="main">
+        <section class="about">
+          <h2 class="main__subtitle">Почему мы</h2>
+          <h1 class="main__title">О нашей компании</h1>
+          <div class="about-wrap">
+            <div class="about-wrap-imgbox" style="background-image: url('assets/images/about.png');"></div>
+            <div class="about-wrap-desc">
+              <h3 class="about-wrap-desc__title">Мастерская путешествий</h3>
+              <p class="about-wrap-desc__text">Турфирма “Мастерская путешествий” в Ярославле успешно работает на рынке туристских услуг уже много лет. </p>
+              <p class="about-wrap-desc__text">Стабильность, ответственность, профессионализм сотрудников, динамическое развитие, позволяют занимать устойчивое положение в туристском бизнесе и являться надежным помощником для наших клиентов.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <footer class="footer"><a class="footer__home" href="/">Мастерская<br>путешествий</a>
+      <nav class="footer-linklist"><a class="footer-linklist__link" href="contacts.html">Контакты</a><a class="footer-linklist__link" href="about.html">О компании</a><a class="footer-linklist__link" href="tours.html">Приятные предложения</a></nav>
+      <p class="footer__allright">Все права защищены</p>
+    </footer>
+    <dialog class="modal-form" id="main-modal-form">
+      <form>
+        <div class="modal-form__title">Свяжитесь с нами</div>
+        <label class="modal-form-label modal-form-label_half">
+          <input id="userName" type="text" data-required="data-required"/>
+          <div class="modal-form__placeholder">Имя</div>
+        </label>
+        <label class="modal-form-label modal-form-label_half">
+          <input id="userName" type="text" data-required="data-required" data-type="email"/>
+          <div class="modal-form__placeholder">E-mail</div>
+        </label>
+        <label class="modal-form-label modal-form-label_full">
+          <input id="userName" type="text"/>
+          <div class="modal-form__placeholder">Сообщение</div>
+        </label>
+        <div class="modal-form-bot">
+          <button class="modal-form-bot__btn" type="submit">Отправить</button>
+          <p class="modal-form-bot__personalData">Нажимая на кнопку, вы даете согласие на обработку персональных данных</p>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
