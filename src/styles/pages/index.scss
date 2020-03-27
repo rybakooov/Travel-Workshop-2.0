@@ -421,3 +421,127 @@
   }
 
 }
+
+
+@media screen and (max-width: 767px){
+  .main, .banner-wrap{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .banner__title{
+    font-size: 36px;
+    line-height: 43px;
+  }
+  .banner__text{
+    margin-top: 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .banner-bottom__link{
+    flex: 1 1 auto;
+  }
+  .banner-bottom__link_trans{
+    margin-left: 10px;
+    flex: 1 1 auto;
+  }
+  .header-right__pop-up-btn, .about-wrap-desc__btn, .tours-wrap-item__btn, .banner-bottom__link, .tours-bottom__btn{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .main__subtitle{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .main__title{
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 7px;
+    padding-bottom: 24px;
+  }
+  .tours-wrap{
+    flex-wrap: wrap;
+  }
+  .tours-wrap-item{
+    width: calc(100% - 20px);
+    &:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }
+  .wrapper:not(.wrapper_solo) .tours-wrap-item:last-child{
+    display: flex;
+  }
+  .tours-wrap-item__where{
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+  }
+  .tours-wrap-item__price{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .tours-wrap{
+    padding-bottom: 20px;
+  }
+  .tours-bottom{
+    display: block;
+  }
+  .tours-bottom__btn{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .tours-bottom__text{
+    font-size: 11px;
+    line-height: 13px;
+  }
+  .about-wrap{
+    display: block;
+  }
+  .about-wrap-imgbox{
+    margin-right: 0;
+    height: 200px;
+    margin-bottom: 20px;
+  }
+  .about-wrap-desc{
+    margin-left: 0;
+  }
+  .about-wrap-desc__title{
+    margin-bottom: 10px;
+  }
+  .about-wrap-desc__text:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .about-wrap-desc__btn{
+    width: 100%;
+  }
+  .faq-item-top{
+    padding: 10px;
+    align-items: flex-start;
+  }
+  .faq-item-top svg{
+    margin-left: 10px;
+    width: 10px;
+    margin-top: 8px;
+    height: 5px;
+  }
+  .index-map-box{
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  .index-map-box__item{
+    margin: 0;
+    &:not(:last-child){
+      margin-bottom: 30px;
+    }
+    svg{
+      width: 20px;
+      height: 20px;
+      margin-right: 14px;
+    }
+  }
+  #main-map{
+    height: 500px;
+  }
+  .main{
+    padding-top: 14px;
+  }
+}

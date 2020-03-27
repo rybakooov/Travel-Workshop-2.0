@@ -65,3 +65,12 @@
     line-height: 14px;
   }
 }
+
+@media screen and (max-width: 767px){
+  .footer{
+    justify-content: center; 
+  }
+  .footer__home, .footer-linklist{
+    display: none;
+  } 
+}

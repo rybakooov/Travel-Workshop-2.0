@@ -72,6 +72,9 @@
     &__switch-theme{
       margin-left: 30px;
       cursor: pointer;
+      svg{
+        display: block;
+      }
     }
     &__pop-up-btn{
       background: $accident;
@@ -217,5 +220,34 @@
         }
       }
     }
+  }
+}
+
+
+
+@media screen and (max-width: 767px){
+  .header-mobile{
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    height: 100vh;
+    padding: 86px 10px 20px
+  }
+  .header-mobile .header-linklist{
+    align-items: flex-start;
+    margin-top: auto;
+  }
+  .header-right__tel{
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .header-mobile .header-right__switch-theme{
+    margin-bottom: auto;
+    margin-top: 40px;
+  }
+  .header-right__pop-up-btn{
+    width: 100%;
+    margin-top: 15px;
   }
 }

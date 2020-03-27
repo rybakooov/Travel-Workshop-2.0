@@ -189,6 +189,7 @@ body.body-overflow{
       background: transparent;
       height: 34px;
       border-bottom: 1px solid var(--light);
+      color: var(--light);
       &:focus{
         & + .modal-form__placeholder{
           transform: translateY(0);
@@ -211,5 +212,30 @@ body.body-overflow{
 @media screen and (max-width: 1120px){
   .wrapper_solo{
     padding-top: 86px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .modal-form form{
+    padding: 40px 20px 30px;
+    width: calc(100% - 20px)
+  }
+  .modal-form-label_half{
+    width: 100%;
+  }
+  .modal-form-bot{
+    display: block;
+  }
+  .modal-form-bot__btn{
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  .modal-form{
+    padding: 10px;
+  }
+  .modal-form-bot__personalData{
+    margin-top: 20px;
+    text-align: center;
   }
 }
